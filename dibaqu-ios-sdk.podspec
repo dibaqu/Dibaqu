@@ -24,9 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
-
+  s.description  = "Dibaqu's official SDK for update&analytics, crash log collect and analysis."
   s.homepage     = "https://github.com/dibaqu/Dibaqu"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -38,8 +36,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license      = {:type => "MIT"}
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +88,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Dibaqu/Dibaqu.framework/Headers/*.{h}"
-  s.vendored_frameworks = 'Dibaqu/Dibaqu.framework'
+  s.source_files  = "Dibaqu.framework/Headers/*.{h}"
+  s.vendored_frameworks = 'Dibaqu.framework'
 
   # s.public_header_files = "Classes/**/*.h"
 
